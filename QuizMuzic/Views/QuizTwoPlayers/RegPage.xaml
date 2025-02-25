@@ -10,6 +10,7 @@
       Title="RegPage">
     <Page.Resources>
         <Style TargetType="TextBlock">
+            <Setter Property="IsHitTestVisible" Value="False"/>
             <Setter Property="Foreground" Value="White"/>
             <Setter Property="FontSize" Value="20"/>
         </Style>
@@ -33,16 +34,16 @@
                 <Grid>
                     <StackPanel>
                         <TextBlock Text="Игрок 1" HorizontalAlignment="Center" Margin="0,0,0,10"/>
-                        <TextBox BorderThickness="0" Background="Transparent" 
-                                 Foreground="White" FontSize="20" Margin="0,0,0,10"/>
+                        <TextBox BorderThickness="0" Background="Transparent" Text="{Binding Player1.Name}"
+                                 Foreground="White" FontSize="20" Margin="0,0,0,10" TextAlignment="Center"/>
                         <Rectangle Height="1" Fill="White" Width="206"/>
                     </StackPanel>
                 </Grid>
                 <Grid Grid.Column="2">
                     <StackPanel>
                         <TextBlock Text="Игрок 1" HorizontalAlignment="Center" Margin="0,0,0,10"/>
-                        <TextBox BorderThickness="0" Background="Transparent"
-                                 Foreground="White" FontSize="20" Margin="0,0,0,10"/>
+                        <TextBox BorderThickness="0" Background="Transparent" Text="{Binding Player2.Name}"
+                                 Foreground="White" FontSize="20" Margin="0,0,0,10" TextAlignment="Center"/>
                         <Rectangle Height="1" Fill="White" Width="206"/>
                     </StackPanel>
                 </Grid>
@@ -60,24 +61,63 @@
                 </Grid.ColumnDefinitions>
 
                 <Grid>
-                    <Button Opacity="0.53"/>
+                    <Button Command="{Binding Chech_90Command}">
+                        <Button.Style>
+                            <Style TargetType="Button" BasedOn="{StaticResource MyButton}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding Is90}" Value="True">
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding Is90}" Value="False">
+                                        <Setter Property="Opacity" Value="0.53"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
                     <TextBlock Text="90-е" FontSize="16"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
                 <Grid Grid.Column="2">
-                    <Button Opacity="0.53"/>
+                    <Button Command="{Binding Chech_PopCommand}">
+                        <Button.Style>
+                            <Style TargetType="Button" BasedOn="{StaticResource MyButton}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsPop}" Value="True">
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsPop}" Value="False">
+                                        <Setter Property="Opacity" Value="0.53"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
                     <TextBlock Text="Поп-музыка" FontSize="16"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
                 <Grid Grid.Column="5">
-                    <Button Opacity="0.53"/>
-                    <TextBlock Text="Классика" FontSize="16"
+                    <Button Command="{Binding Chech_ClassicCommand}">
+                        <Button.Style>
+                            <Style TargetType="Button" BasedOn="{StaticResource MyButton}">
+                                <Style.Triggers>
+                                    <DataTrigger Binding="{Binding IsClassic}" Value="True">
+                                        <Setter Property="Opacity" Value="1"/>
+                                    </DataTrigger>
+                                    <DataTrigger Binding="{Binding IsClassic}" Value="False">
+                                        <Setter Property="Opacity" Value="0.53"/>
+                                    </DataTrigger>
+                                </Style.Triggers>
+                            </Style>
+                        </Button.Style>
+                    </Button>
+                    <TextBlock Text="Классика" FontSize="16" 
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </Grid>
 
             <Grid Margin="50" Height="48">
-                <Button Opacity="0.53"/>
+                <Button Opacity="0.53" Click="Button_Click"/>
                 <TextBlock Text="Играть" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
         </StackPanel>

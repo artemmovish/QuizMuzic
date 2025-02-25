@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuizMuzic.ViewModels.QuizTwoPlayers;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,20 @@ namespace QuizMuzic.Views.QuizTwoPlayers
         public RegPage()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var vm = DataContext as RegViewModel;
+
+            var qwests = vm.LoadQwest();
+
+            if (qwests == null)
+            {
+                return;
+            }
+
+
         }
     }
 }

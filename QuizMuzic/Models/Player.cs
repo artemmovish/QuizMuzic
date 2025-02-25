@@ -8,7 +8,7 @@ namespace QuizMuzic.Models
 {
     public class Player
     {
-        public string Name;
+        public string Name { get; set; }
         public int Score = 0;
     }
 }
