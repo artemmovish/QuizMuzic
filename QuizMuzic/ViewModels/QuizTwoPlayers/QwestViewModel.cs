@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace QuizMuzic.ViewModels.QuizTwoPlayers
 {
-    public class QwestViewModel : ObservableObject
+    public partial class QwestViewModel : ObservableObject
     {
 
     }
