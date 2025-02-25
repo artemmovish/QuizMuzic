@@ -1,0 +1,90 @@
+﻿<Page x:Class="QuizMuzic.Views.QuizTwoPlayers.QwestPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:QuizMuzic.Views.QuizTwoPlayers"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="QwestPage">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="15"/>
+            <Setter Property="IsHitTestVisible" Value="False"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        <Image Source="pack://application:,,,/Resources/backgroundclassic.png"/>
+        <StackPanel HorizontalAlignment="Center">
+            <Grid Width="282" Margin="0,0,0,20">
+                <Rectangle Fill="#EFD9F7" Opacity="0.53" Height="35" RadiusX="10" RadiusY="10" />
+                <TextBlock Text="Раздел классической музыки" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
+            </Grid >
+
+            <StackPanel>
+                <Grid Width="650">
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Игрок: "/>
+                        <TextBlock Text=""/>
+                    </StackPanel>
+                    <TextBlock HorizontalAlignment="Center" 
+                               Text="Вспомни композитара"/>
+                    <StackPanel HorizontalAlignment="Right"
+                                Orientation="Horizontal">
+                        <TextBlock Text="Таймер: "/>
+                        <TextBlock Text="15" HorizontalAlignment="Right"/>
+                    </StackPanel>
+                </Grid>
+                <Grid>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Количество баллов: "/>
+                        <Grid Width="35" Margin="0,0,0,20">
+                            <Rectangle Fill="#EFD9F7" Opacity="0.53" Height="25" RadiusX="10" RadiusY="10" />
+                            <TextBlock Text="10" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
+                        </Grid >
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            
+            <Grid Width="305" Height="203" Margin="0,0,0,20">
+                <!-- Обрезаем содержимое по закругленным границам -->
+                <Grid.Clip>
+                    <RectangleGeometry RadiusX="20" RadiusY="20" Rect="0, 0, 305, 203"/>
+                </Grid.Clip>
+
+                <!-- Изображение -->
+                <Image Source="pack://application:,,,/Resources/mainMenuImage.png" Stretch="Fill"/>
+            </Grid>
+
+            <Grid Width="165" Height="32">
+                <Button Opacity="0.53" Background="#EFD9F7"/>
+                <TextBlock Text="Восапоизвести" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            </Grid>
+            <Grid HorizontalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="auto"/>
+                    <ColumnDefinition Width="40"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid Margin="0,20,0,0">
+                    <Rectangle Width="341" Height="36" RadiusX="10" RadiusY="10"
+                        Fill="#EFD9F7" Opacity="0.53"/>
+                    <StackPanel VerticalAlignment="Center" Margin="20,0,20,0">
+                        <TextBox Background="Transparent" BorderThickness="0"/>
+                        <Rectangle Fill="Black" Height="1" Opacity="0.6" Margin="0,5,0,0"/>
+                    </StackPanel>
+                </Grid>
+                <Grid Margin="0,20,0,0" Grid.Column="2">
+                    <Rectangle Width="103" Height="36" RadiusX="10" RadiusY="10"
+                        Fill="#EFD9F7" Opacity="0.53"/>
+                </Grid>
+                <Grid Margin="0,20,0,0" Grid.Column="2">
+                    <Button Opacity="0.53" Background="#EFD9F7"/>
+                    <TextBlock Text="Ответить" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                </Grid>
+            </Grid>
+        </StackPanel>
+    </Grid>
+</Page>
