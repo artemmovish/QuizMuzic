@@ -52,7 +52,7 @@
                 <Grid Grid.Column="2">
                     <Button Opacity="0.53" x:Name="ToQuiz"
                             Click="ToQuiz_Click"/>
-                    <TextBlock Text="Квиз на 2 ишрока" IsHitTestVisible="False"
+                    <TextBlock Text="Квиз на 2 игрока" IsHitTestVisible="False"
                                HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </Grid>

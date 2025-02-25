@@ -15,12 +15,14 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
         [ObservableProperty]
         Player player1 = new Player()
         {
-            Name = "Игрок_1"
+            Name = "Игрок_1",
+            Score = 0
         };
         [ObservableProperty]
         Player player2 = new Player
         {
-            Name = "Игрок_2"
+            Name = "Игрок_2",
+            Score = 0
         };
 
         [ObservableProperty]
@@ -419,6 +421,14 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             };
 
             return result;
+        }
+        public ObservableCollection<Player> LoadPlayers()
+        {
+
+            if (Player1.Name == "") Player1.Name = "Игрок 1";
+            if (Player2.Name == "") Player2.Name = "Игрок 2";
+
+            return new ObservableCollection<Player> { Player1, Player2 };
         }
     }
 }

@@ -9,6 +9,11 @@ namespace QuizMuzic.Models
     public class Player
     {
         public string Name { get; set; }
-        public int Score = 0;
+        public int Score { get; set; }
+
+        public Player()
+        {
+            Score = 0;
+        }
     }
 }

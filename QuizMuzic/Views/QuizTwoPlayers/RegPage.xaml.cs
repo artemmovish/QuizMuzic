@@ -37,7 +37,11 @@ namespace QuizMuzic.Views.QuizTwoPlayers
                 return;
             }
 
+            var vm_2 = new QwestViewModel(vm.LoadPlayers(), qwests);
 
+            var page = new QwestPage();
+            page.DataContext = vm_2;
+            NavigationService.Navigate(page);
         }
     }
 }
