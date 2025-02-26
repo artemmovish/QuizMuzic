@@ -13,6 +13,66 @@
     <None Remove="Resources\mainMenu.png" />
     <None Remove="Resources\mainMenuImage.png" />
     <None Remove="Resources\test.png" />
+    <None Remove="Resources\Музыкальный квиз\90-е\1.1 Бухгалтер.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\1.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\1.2 Я - это ты.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\1.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\2.1 Алла Пугачева.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\2.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\2.2 Андрей Губин.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\2.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\3.1 Люби меня, люби.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\3.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\3.2 Маленькая страна.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\3.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\4.1 Жанна Фриске.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\4.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\4.2 ЮриИ Шатунов.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\4.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\5.1 Любочка.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\5.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\90-е\5.2 Музыка нас связала.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\5.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\1.1 К Элизе.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\1.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\1.2 Лунная соната.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\1.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.1 Вивальди.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.1 Утро.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.1 Моцарт.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.2 Шопен.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\5.1 Шутка.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\5.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\5.2 Весна.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\5.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\1.1 Будильник.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\1.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\1.2 Титры.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\1.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\2.1 Градусы.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\2.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\2.2 Queen.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\2.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\3.1 No time to die.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\3.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\3.2 Rolling in the deep.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\3.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\4.1 Руки вверх.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\4.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\4.2 ABBA.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\4.2.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\5.1 Зима в сердце.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\5.1.jpg" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\5.2 Я поднимаю руки.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Поп-музыка\5.2.jpg" />
   </ItemGroup>
 
   <ItemGroup>
@@ -21,6 +81,7 @@
 
   <ItemGroup>
     <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="NAudio" Version="2.2.1" />
   </ItemGroup>
 
   <ItemGroup>
@@ -36,6 +97,106 @@
     <Resource Include="Resources\test.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\1.1 Бухгалтер.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\1.1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\1.2 Я - это ты.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\1.2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\2.1 Алла Пугачева.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\2.1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\2.2 Андрей Губин.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\2.2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\3.1 Люби меня, люби.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\3.1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\3.2 Маленькая страна.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\3.2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\4.1 Жанна Фриске.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\4.1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\4.2 ЮриИ Шатунов.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\4.2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\5.1 Любочка.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\5.1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\5.2 Музыка нас связала.mp3">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\90-е\5.2.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1 К Элизе.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2 Лунная соната.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1 Вивальди.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1 Утро.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1 Моцарт.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2 Шопен.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1 Шутка.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2 Весна.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1 Будильник.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2 Титры.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1 Градусы.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2 Queen.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1 No time to die.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2 Rolling in the deep.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1 Руки вверх.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2 ABBA.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1 Зима в сердце.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2 Я поднимаю руки.mp3" />
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2.jpg" />
   </ItemGroup>
 
 </Project>

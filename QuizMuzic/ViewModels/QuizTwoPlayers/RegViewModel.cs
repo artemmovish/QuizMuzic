@@ -399,7 +399,7 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             if (IsPop) checkRule++;
             if (IsClassic) checkRule++;
 
-            if(checkRule == 0)
+            if(checkRule == -1)
             {
                 return null;
             }

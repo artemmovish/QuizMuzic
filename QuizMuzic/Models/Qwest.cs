@@ -8,7 +8,7 @@ namespace QuizMuzic.Models
 {
     public class Qwest
     {
-        public string Text;
+        public string Text { get; set; }
         public string Answer;
         public string ImagePath;
         public int Score;
