@@ -60,10 +60,9 @@
                        HorizontalAlignment="Center" Margin="0,50,0,0"/>
             <Grid Margin="0,20,0,0">
                 <Button Background="#F5F5F5" Width="190" Height="40"
-                        Opacity="0.7"/>
-                <TextBlock Text="В главное меню" FontSize="16"
+                        Opacity="0.7" Click="Button_Click"/>
+                <TextBlock Text="В главное меню" FontSize="16" IsHitTestVisible="False"
                            VerticalAlignment="Center" HorizontalAlignment="Center"/>
-                
             </Grid>
         </StackPanel>
     </Grid>

@@ -1,5 +1,6 @@
 ﻿using QuizMuzic.ViewModels;
 using QuizMuzic.Views.QuizTwoPlayers;
+using QuizMuzic.Views.TestOnePlayer;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -36,8 +37,8 @@ namespace QuizMuzic.Views
 
         private void ToTest_Click(object sender, RoutedEventArgs e)
         {
-            //var page = new RegPage();
-            //NavigationService.Navigate(page);
+            var page = new TestPage();
+            NavigationService.Navigate(page);
         }
     }
 }
