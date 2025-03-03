@@ -122,7 +122,7 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             counterPlayer = counterPlayer == 0 ? 1 : 0;
             counterQwest = counterPlayer == 0 ? counterQwest + 1 : counterQwest;
 
-            if (counterQwest == 6) 
+            if (counterQwest == 5) 
             {
                 MessageBox.Show("Конец");
 

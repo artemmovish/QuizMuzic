@@ -9,11 +9,12 @@ namespace QuizMuzic.Models
     public class Qwest
     {
         public string Text { get; set; }
-        public string Answer;
-        public string ImagePath;
-        public int Score;
-        public string Color;
-        public string BackgroundPath;
-        public string MusicPath;
+        public string Part { get; set; }
+        public string Answer { get; set; }
+        public string ImagePathBackground { get; set; }
+        public int Score { get; set; }
+        public string Color { get; set; }
+        public string ImagePath { get; set; }
+        public string MusicPath { get; set; }
     }
 }

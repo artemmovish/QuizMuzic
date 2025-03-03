@@ -20,11 +20,11 @@
     </Page.DataContext>
     
     <Grid>
-        <Image Source="pack://application:,,,/Resources/backgroundclassic.png"/>
+        <Image Source="{Binding SelectedQwest.ImagePathBackground}" Stretch="Fill"/>
         <StackPanel HorizontalAlignment="Center">
             <Grid Width="282" Margin="0,0,0,20">
                 <Rectangle Fill="#EFD9F7" Opacity="0.53" Height="35" RadiusX="10" RadiusY="10" />
-                <TextBlock Text="Раздел классической музыки" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
+                <TextBlock Text="{Binding SelectedQwest.Part}" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
             </Grid >
 
             <StackPanel>
@@ -59,7 +59,7 @@
                 </Grid.Clip>
 
                 <!-- Изображение -->
-                <Image Source="pack://application:,,,/Resources/mainMenuImage.png" Stretch="Fill"/>
+                <Image Source="{Binding SelectedQwest.ImagePath}" Stretch="Fill"/>
             </Grid>
 
             <Grid Width="165" Height="32">
