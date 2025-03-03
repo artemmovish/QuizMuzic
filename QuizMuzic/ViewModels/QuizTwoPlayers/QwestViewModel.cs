@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using QuizMuzic.Models;
+using QuizMuzic.Views.QuizTwoPlayers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -9,12 +10,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using System.Windows.Controls;
 using System.Windows.Media;
 
 namespace QuizMuzic.ViewModels.QuizTwoPlayers
 {
     public partial class QwestViewModel : ObservableObject
     {
+        public Action<Page> ToFinal;
 
         private CancellationTokenSource _cancellationTokenSource = new();
 
@@ -125,7 +128,13 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             if (counterQwest == 5) 
             {
                 MessageBox.Show("Конец");
+                var vm = new FinalViewModel(Players[0], Players[1], SelectedQwest.ImagePathBackground);
 
+                var page = new FinalPage();
+
+                page.DataContext = vm;
+
+                ToFinal(page);
                 return;
             }
             AnswerText = "";

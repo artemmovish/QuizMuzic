@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Resources\background90.png" />
     <None Remove="Resources\backgroundclassic.png" />
+    <None Remove="Resources\imageVictory.png" />
     <None Remove="Resources\mainMenu.png" />
     <None Remove="Resources\mainMenuImage.png" />
     <None Remove="Resources\test.png" />
@@ -90,6 +91,7 @@
     <Resource Include="Resources\backgroundclassic.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Resources\imageVictory.png" />
     <Resource Include="Resources\mainMenu.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>

@@ -30,6 +30,7 @@ namespace QuizMuzic.Views.QuizTwoPlayers
             var vm_2 = new QwestViewModel(vm.LoadPlayers(), qwests);
 
             var page = new QwestPage();
+            vm_2.ToFinal = page.NavigateToFinal;
             page.DataContext = vm_2;
             NavigationService.Navigate(page);
         }

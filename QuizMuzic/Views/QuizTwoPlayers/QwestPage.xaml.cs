@@ -24,5 +24,10 @@ namespace QuizMuzic.Views.QuizTwoPlayers
         {
             InitializeComponent();
         }
+
+        public void NavigateToFinal(Page page)
+        {
+            NavigationService.Navigate(page);
+        }
     }
 }
