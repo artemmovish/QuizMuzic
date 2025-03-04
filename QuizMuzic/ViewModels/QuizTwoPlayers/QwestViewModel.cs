@@ -8,6 +8,7 @@ using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -20,6 +21,8 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
         public Action<Page> ToFinal;
 
         private CancellationTokenSource _cancellationTokenSource = new();
+
+        private CancellationTokenSource _cancellationTokenSourceTimer = new();
 
         private MediaPlayer mediaPlayer;
 
@@ -38,7 +41,7 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
         int counterPlayer = 0;
 
         [ObservableProperty]
-        int timer = 5;
+        int timer = 20;
         public QwestViewModel()
         {
 
@@ -58,6 +61,7 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
         async Task Play()
         {
             _cancellationTokenSource = new CancellationTokenSource();
+
             string musicFilePath = Path.Combine(Directory.GetCurrentDirectory(), SelectedQwest.MusicPath);
 
             // Проверка существования файла
@@ -75,19 +79,8 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                         // Ждем завершения воспроизведения
                         await Task.Delay(mediaPlayer.NaturalDuration.TimeSpan);
 
-                        while (true)
-                        {
-                            await Task.Delay(1000);
-                            Timer--;
-
-                            if (Timer == 0)
-                            {
-                                MessageBox.Show("Время вышло. Переход на другого игрока");
-                                Answer();
-                                Timer = 20;
-                                return;
-                            }
-                        }
+                        _cancellationTokenSource = null;
+                        TimerStart();
                     }
                     else
                     {
@@ -110,22 +103,58 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             }
         }
 
+
+        async Task TimerStart()
+        {
+            _cancellationTokenSourceTimer = new CancellationTokenSource();
+
+            while (true)
+            {
+                await Task.Delay(1000);
+                Timer--;
+
+                if (Timer == 0)
+                {
+                    MessageBox.Show("Время вышло. Переход на другого игрока");
+                    Answer();
+                    Timer = 20;
+                    return;
+                }
+            }
+        }
+
         [RelayCommand]
         void Answer()
         {
-            _cancellationTokenSource.Cancel(); // Прерываем ожидание
+            // Проверяем, есть ли запущенные задачи
+            if (_cancellationTokenSource != null && !_cancellationTokenSource.IsCancellationRequested)
+            {
+                MessageBox.Show("Песня еще исполняется. Пожалуйста, дождитесь её завершения.");
+                return;
+            }
+            _cancellationTokenSourceTimer.Cancel();
+
+            // Проверяем, есть ли запущенные задачи
+            if (_cancellationTokenSource != null && !_cancellationTokenSource.IsCancellationRequested)
+            {
+                MessageBox.Show("Задача уже выполняется. Пожалуйста, дождитесь её завершения.");
+                return;
+            }
 
             if (AnswerText.ToLower() == SelectedQwest.Answer.ToLower())
-            {                                
-                SelectedPlayer.Score++;      
-                MessageBox.Show("Правильно. Переход на другого игрока");           
+            {
+                SelectedPlayer.Score++;
+                MessageBox.Show("Правильно. Переход на другого игрока");
             }
-            MessageBox.Show("Не правильно. Переход на другого игрока");
+            else
+            {
+                MessageBox.Show("Не правильно. Переход на другого игрока");
+            }
 
             counterPlayer = counterPlayer == 0 ? 1 : 0;
             counterQwest = counterPlayer == 0 ? counterQwest + 1 : counterQwest;
 
-            if (counterQwest == 5) 
+            if (counterQwest == 5)
             {
                 MessageBox.Show("Конец");
                 var vm = new FinalViewModel(Players[0], Players[1], SelectedQwest.ImagePathBackground);
@@ -137,6 +166,7 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                 ToFinal(page);
                 return;
             }
+
             AnswerText = "";
             SelectedPlayer = Players[counterPlayer];
             SelectedQwest = Qwests[counterPlayer][counterQwest];

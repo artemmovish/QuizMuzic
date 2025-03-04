@@ -23,7 +23,7 @@
         <Image Source="{Binding SelectedQwest.ImagePathBackground}" Stretch="Fill"/>
         <StackPanel HorizontalAlignment="Center">
             <Grid Width="282" Margin="0,0,0,20">
-                <Rectangle Fill="#EFD9F7" Opacity="0.53" Height="35" RadiusX="10" RadiusY="10" />
+                <Rectangle Fill="{Binding SelectedQwest.Color}" Opacity="0.53" Height="35" RadiusX="10" RadiusY="10" />
                 <TextBlock Text="{Binding SelectedQwest.Part}" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
             </Grid >
 
@@ -45,7 +45,7 @@
                     <StackPanel Orientation="Horizontal">
                         <TextBlock Text="Количество баллов: "/>
                         <Grid Width="35" Margin="0,0,0,20">
-                            <Rectangle Fill="#EFD9F7" Opacity="0.53" Height="25" RadiusX="10" RadiusY="10" />
+                            <Rectangle Fill="{Binding SelectedQwest.Color}" Opacity="0.53" Height="25" RadiusX="10" RadiusY="10" />
                             <TextBlock Text="{Binding SelectedPlayer.Score}" FontSize="15" TextAlignment="Center" VerticalAlignment="Center"/>
                         </Grid >
                     </StackPanel>
@@ -63,7 +63,7 @@
             </Grid>
 
             <Grid Width="165" Height="32">
-                <Button Opacity="0.53" Background="#EFD9F7"
+                <Button Opacity="0.53" Background="{Binding SelectedQwest.Color}"
                         Command="{Binding PlayCommand}"/>
                 <TextBlock Text="Воспроизвести" HorizontalAlignment="Center" VerticalAlignment="Center"/>
             </Grid>
@@ -76,7 +76,7 @@
 
                 <Grid Margin="0,20,0,0">
                     <Rectangle Width="341" Height="36" RadiusX="10" RadiusY="10"
-                        Fill="#EFD9F7" Opacity="0.53"/>
+                        Fill="{Binding SelectedQwest.Color}" Opacity="0.53"/>
                     <StackPanel VerticalAlignment="Center" Margin="20,0,20,0">
                         <TextBox Text="{Binding AnswerText}" Background="Transparent" BorderThickness="0"/>
                         <Rectangle Fill="Black" Height="1" Opacity="0.6" Margin="0,5,0,0"/>
@@ -84,10 +84,10 @@
                 </Grid>
                 <Grid Margin="0,20,0,0" Grid.Column="2">
                     <Rectangle Width="103" Height="36" RadiusX="10" RadiusY="10"
-                        Fill="#EFD9F7" Opacity="0.53"/>
+                        Fill="{Binding SelectedQwest.Color}" Opacity="0.53"/>
                 </Grid>
                 <Grid Margin="0,20,0,0" Grid.Column="2">
-                    <Button Opacity="0.53" Background="#EFD9F7" Command="{Binding AnswerCommand}"/>
+                    <Button Opacity="0.53" Background="{Binding SelectedQwest.Color}" Command="{Binding AnswerCommand}"/>
                     <TextBlock Text="Ответить" HorizontalAlignment="Center" VerticalAlignment="Center"/>
                 </Grid>
             </Grid>

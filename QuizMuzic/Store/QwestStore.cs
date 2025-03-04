@@ -138,8 +138,8 @@ namespace QuizMuzic.Store
         Score = 1,
         Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\1.1.jpg",
-        MusicPath = "Resources//Музыкальный квиз//90-е//1.1 К Элизе.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\1.1.jpg",
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//1.1 К Элизе.mp3"
     },
     new Qwest
     {
@@ -147,10 +147,10 @@ namespace QuizMuzic.Store
         Part = "Раздел Классической музыки",
         Answer = "Вивальди",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\2.1.jpg",
-        MusicPath = "Resources//Музыкальный квиз//90-е//2.1 Вивальди.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\2.1.jpg",
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//2.1 Вивальди.mp3"
     },
     new Qwest
     {
@@ -158,10 +158,10 @@ namespace QuizMuzic.Store
         Part = "Раздел Классической музыки",
         Answer = "Утро",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\3.1.jpg",
-        MusicPath = "Resources//Музыкальный квиз//90-е//3.1 Утро.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\3.1.jpg",
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//3.1 Утро.mp3"
     },
     new Qwest
     {
@@ -169,10 +169,10 @@ namespace QuizMuzic.Store
         Part = "Раздел Классической музыки",
         Answer = "Моцарт", // Исправлено с "Жанна Фриске" на "Моцарт"
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\4.1.jpg",
-        MusicPath = "Resources//Музыкальный квиз//90-е//4.1 Моцарт.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\4.1.jpg",
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//4.1 Моцарт.mp3"
     },
     new Qwest
     {
@@ -180,10 +180,10 @@ namespace QuizMuzic.Store
         Part = "Раздел Классической музыки",
         Answer = "Шутка", // Исправлено с "Любочка" на "Шутка"
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\5.1.jpg",
-        MusicPath = "Resources//Музыкальный квиз//90-е//5.1 Шутка.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\5.1.jpg",
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//5.1 Шутка.mp3"
     }
 };
         static public ObservableCollection<Qwest> QwestsClasic_2 = new ObservableCollection<Qwest>
@@ -192,56 +192,56 @@ namespace QuizMuzic.Store
     {
         Text = "Название трека",
         Part = "Раздел Классической музыки",
-        Answer = "Я - это ты",
+        Answer = "Лунная соната",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\1.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//1.2 Я - это ты.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\1.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//1.2 Лунная соната.mp3"
     },
     new Qwest
     {
         Text = "Имя исполнителя",
         Part = "Раздел Классической музыки",
-        Answer = "Андрей Губин",
+        Answer = "Чаийковскиий",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\2.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//2.2 Андрей Губин.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\2.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//2.2 Чаийковскиий.mp3"
     },
     new Qwest
     {
         Text = "Название трека",
         Part = "Раздел Классической музыки",
-        Answer = "Маленькая страна",
+        Answer = "Турецкиий марш",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\3.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//3.2 Маленькая страна.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\3.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//3.2 Турецкиий марш.mp3"
     },
     new Qwest
     {
         Text = "Имя исполнителя",
         Part = "Раздел Классической музыки",
-        Answer = "Юрий Шатунов",
+        Answer = "Шопен",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\4.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//4.2 Юрий Шатунов.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\4.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//4.2 Шопен.mp3"
     },
     new Qwest
     {
         Text = "Название трека",
         Part = "Раздел Классической музыки",
-        Answer = "Музыка нас связала",
+        Answer = "Весна",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\5.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//5.2 Музыка нас связала.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Классическая музыка\\5.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Классическая музыка//5.2 Весна.mp3"
     }
 };
 
@@ -252,56 +252,56 @@ namespace QuizMuzic.Store
     {
         Text = "Название трека",
         Part = "Раздел поп-музыки",
-        Answer = "Бухгалтер",
+        Answer = "Будильник",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\1.1.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//1.1 Бухгалтер.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\1.1.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//1.1 Будильник.mp3"
     },
     new Qwest
     {
         Text = "Имя исполнителя",
         Part = "Раздел поп-музыки",
-        Answer = "Алла Пугачева",
+        Answer = "Градусы",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\2.1.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//2.1 Алла Пугачева.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\2.1.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//2.1 Градусы.mp3"
     },
     new Qwest
     {
         Text = "Название трека",
         Part = "Раздел поп-музыки",
-        Answer = "Люби меня, люби",
+        Answer = "No time to die",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\3.1.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//3.1 Люби меня, люби.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\3.1.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//3.1 No time to die.mp3"
     },
     new Qwest
     {
         Text = "Имя исполнителя",
         Part = "Раздел поп-музыки",
-        Answer = "Жанна Фриске",
+        Answer = "Руки вверх",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\4.1.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//4.1 Жанна Фриске.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\4.1.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//4.1 Руки вверх.mp3"
     },
     new Qwest
     {
         Text = "Название трека",
         Part = "Раздел поп-музыки",
-        Answer = "Любочка",
+        Answer = "Зима в сердце",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\5.1.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//5.1 Любочка.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\5.1.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//5.1 Зима в сердце.mp3"
     }
 };
         static public ObservableCollection<Qwest> QwestsPop_2 = new ObservableCollection<Qwest>
@@ -312,10 +312,10 @@ namespace QuizMuzic.Store
         Part = "Раздел поп-музыки",
         Answer = "Я - это ты",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\1.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//1.2 Я - это ты.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\1.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//1.2 Я - это ты.mp3"
     },
     new Qwest
     {
@@ -323,10 +323,10 @@ namespace QuizMuzic.Store
         Part = "Раздел поп-музыки",
         Answer = "Андрей Губин",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\2.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//2.2 Андрей Губин.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\2.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//2.2 Андрей Губин.mp3"
     },
     new Qwest
     {
@@ -334,10 +334,10 @@ namespace QuizMuzic.Store
         Part = "Раздел поп-музыки",
         Answer = "Маленькая страна",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\3.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//3.2 Маленькая страна.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\3.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//3.2 Маленькая страна.mp3"
     },
     new Qwest
     {
@@ -345,10 +345,10 @@ namespace QuizMuzic.Store
         Part = "Раздел поп-музыки",
         Answer = "Юрий Шатунов",
         Score = 2,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\4.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//4.2 Юрий Шатунов.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\4.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//4.2 Юрий Шатунов.mp3"
     },
     new Qwest
     {
@@ -356,10 +356,10 @@ namespace QuizMuzic.Store
         Part = "Раздел поп-музыки",
         Answer = "Музыка нас связала",
         Score = 1,
-        Color = "#F5F5F5",
+        Color = "#FF6C6C",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundpop.png",
-        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\90-е\\5.2.jpg", // Добавлено расширение .jpg
-        MusicPath = "Resources//Музыкальный квиз//90-е//5.2 Музыка нас связала.mp3"
+        ImagePath = Environment.CurrentDirectory + "\\Resources\\Музыкальный квиз\\Поп-музыка\\5.2.jpg", // Добавлено расширение .jpg
+        MusicPath = "Resources//Музыкальный квиз//Поп-музыка//5.2 Музыка нас связала.mp3"
     }
 };
     }

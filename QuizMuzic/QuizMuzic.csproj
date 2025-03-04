@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="Resources\background90.png" />
     <None Remove="Resources\backgroundclassic.png" />
+    <None Remove="Resources\backgroundpop.png" />
     <None Remove="Resources\imageVictory.png" />
     <None Remove="Resources\mainMenu.png" />
     <None Remove="Resources\mainMenuImage.png" />
@@ -87,120 +88,207 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Resources\background90.png" />
-    <Resource Include="Resources\backgroundclassic.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    <Resource Include="Resources\background90.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\imageVictory.png" />
+    <Resource Include="Resources\backgroundclassic.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\backgroundpop.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\imageVictory.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
     <Resource Include="Resources\mainMenu.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\mainMenuImage.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\test.png">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\1.1 Бухгалтер.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\1.1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\1.2 Я - это ты.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\1.2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\2.1 Алла Пугачева.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\2.1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\2.2 Андрей Губин.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\2.2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\3.1 Люби меня, люби.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\3.1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\3.2 Маленькая страна.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\3.2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\4.1 Жанна Фриске.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\4.1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\4.2 ЮриИ Шатунов.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\4.2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\5.1 Любочка.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\5.1.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\5.2 Музыка нас связала.mp3">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\5.2.jpg">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1 К Элизе.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2 Лунная соната.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1 Вивальди.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1 Утро.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1 Моцарт.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2 Шопен.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1 Шутка.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2 Весна.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1 Будильник.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2 Титры.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1 Градусы.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2 Queen.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1 No time to die.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2 Rolling in the deep.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1 Руки вверх.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2 ABBA.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1 Зима в сердце.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1.jpg" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2 Я поднимаю руки.mp3" />
-    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2.jpg" />
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1 К Элизе.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2 Лунная соната.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\1.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1 Вивальди.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1 Утро.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1 Моцарт.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2 Шопен.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\4.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1 Шутка.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2 Весна.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\5.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1 Будильник.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2 Титры.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\1.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1 Градусы.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2 Queen.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\2.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1 No time to die.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2 Rolling in the deep.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\3.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1 Руки вверх.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2 ABBA.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\4.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1 Зима в сердце.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.1.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2 Я поднимаю руки.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Resources\Музыкальный квиз\Поп-музыка\5.2.jpg">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

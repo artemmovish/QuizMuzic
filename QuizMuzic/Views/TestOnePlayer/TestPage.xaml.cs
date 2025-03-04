@@ -151,7 +151,8 @@ namespace QuizMuzic.Views.TestOnePlayer
             else
             {
                 MessageBox.Show("Тест завершен!", "Конец", MessageBoxButton.OK, MessageBoxImage.Information);
-                AnswerButton.IsEnabled = false; // Отключаем кнопку после завершения теста
+
+                NavigationService.Navigate(new ChangeLevel());
             }
 
             // Сброс выбора RadioButton
