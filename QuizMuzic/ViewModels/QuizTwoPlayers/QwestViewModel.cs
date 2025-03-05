@@ -116,13 +116,13 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                 if (Timer == 0)
                 {
                     MessageBox.Show("Время вышло. Переход на другого игрока");
-                    Answer();
+                    NewQwest();
                     Timer = 20;
                     return;
                 }
             }
         }
-
+        
         [RelayCommand]
         void Answer()
         {
@@ -134,13 +134,6 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             }
             _cancellationTokenSourceTimer.Cancel();
 
-            // Проверяем, есть ли запущенные задачи
-            if (_cancellationTokenSource != null && !_cancellationTokenSource.IsCancellationRequested)
-            {
-                MessageBox.Show("Задача уже выполняется. Пожалуйста, дождитесь её завершения.");
-                return;
-            }
-
             if (AnswerText.ToLower() == SelectedQwest.Answer.ToLower())
             {
                 SelectedPlayer.Score++;
@@ -148,9 +141,13 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             }
             else
             {
-                MessageBox.Show("Не правильно. Переход на другого игрока");
+                MessageBox.Show("Неправильно. Переход на другого игрока");
             }
 
+            NewQwest();
+        }
+        void NewQwest()
+        {
             counterPlayer = counterPlayer == 0 ? 1 : 0;
             counterQwest = counterPlayer == 0 ? counterQwest + 1 : counterQwest;
 
