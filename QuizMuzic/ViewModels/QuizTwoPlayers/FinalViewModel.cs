@@ -1,5 +1,6 @@
 ﻿using CommunityToolkit.Mvvm.ComponentModel;
 using QuizMuzic.Models;
+using System.Windows;
 
 namespace QuizMuzic.ViewModels.QuizTwoPlayers
 {
@@ -25,6 +26,13 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             {
                 Player1 = player1;
                 Player2 = player2;
+            }
+            else if(player1.Score == player2.Score)
+            {
+                player1.Name = player1.Name + " и " + player2.Name;
+                Player1 = player1;
+                Player2 = player1;
+                MessageBox.Show("Ничья");
             }
             else
             {

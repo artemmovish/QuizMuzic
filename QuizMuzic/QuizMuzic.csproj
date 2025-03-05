@@ -30,7 +30,7 @@
     <None Remove="Resources\Музыкальный квиз\90-е\3.2.jpg" />
     <None Remove="Resources\Музыкальный квиз\90-е\4.1 Жанна Фриске.mp3" />
     <None Remove="Resources\Музыкальный квиз\90-е\4.1.jpg" />
-    <None Remove="Resources\Музыкальный квиз\90-е\4.2 ЮриИ Шатунов.mp3" />
+    <None Remove="Resources\Музыкальный квиз\90-е\4.2 Юрий Шатунов.mp3" />
     <None Remove="Resources\Музыкальный квиз\90-е\4.2.jpg" />
     <None Remove="Resources\Музыкальный квиз\90-е\5.1 Любочка.mp3" />
     <None Remove="Resources\Музыкальный квиз\90-е\5.1.jpg" />
@@ -42,11 +42,11 @@
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\1.2.jpg" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.1 Вивальди.mp3" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg" />
-    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.2 Чаийковскиий.mp3" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.1 Утро.mp3" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg" />
-    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3" />
+    <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.2 Турецкиий марш.mp3" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.1 Моцарт.mp3" />
     <None Remove="Resources\Музыкальный квиз\Классическая музыка\4.1.jpg" />
@@ -151,7 +151,7 @@
     <Resource Include="Resources\Музыкальный квиз\90-е\4.1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Музыкальный квиз\90-е\4.2 ЮриИ Шатунов.mp3">
+    <Resource Include="Resources\Музыкальный квиз\90-е\4.2 Юрий Шатунов.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\90-е\4.2.jpg">
@@ -187,7 +187,7 @@
     <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2 ЧаиИковскииИ.mp3">
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2 Чаийковскиий.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\Классическая музыка\2.2.jpg">
@@ -199,7 +199,7 @@
     <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.1.jpg">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
-    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2 ТурецкииИ марш.mp3">
+    <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2 Турецкиий марш.mp3">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Resources\Музыкальный квиз\Классическая музыка\3.2.jpg">

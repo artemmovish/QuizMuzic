@@ -20,9 +20,9 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
     {
         public Action<Page> ToFinal;
 
-        private CancellationTokenSource _cancellationTokenSource = new();
+        private CancellationTokenSource _cancellationTokenSource;
 
-        private CancellationTokenSource _cancellationTokenSourceTimer = new();
+        private CancellationTokenSource _cancellationTokenSourceTimer;
 
         private MediaPlayer mediaPlayer;
 
@@ -64,20 +64,17 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
 
             string musicFilePath = Path.Combine(Directory.GetCurrentDirectory(), SelectedQwest.MusicPath);
 
-            // Проверка существования файла
             if (File.Exists(musicFilePath))
             {
                 Uri resourceUri = new Uri(musicFilePath, UriKind.Absolute);
 
-                // Подписываемся на событие MediaOpened, чтобы убедиться, что файл загружен
                 mediaPlayer.MediaOpened += async (sender, e) =>
                 {
-                    // Проверяем, что продолжительность доступна
                     if (mediaPlayer.NaturalDuration.HasTimeSpan)
                     {
                         mediaPlayer.Play();
-                        // Ждем завершения воспроизведения
-                        await Task.Delay(mediaPlayer.NaturalDuration.TimeSpan);
+
+                        await Task.Delay(mediaPlayer.NaturalDuration.TimeSpan, _cancellationTokenSource.Token);
 
                         _cancellationTokenSource = null;
                         TimerStart();
@@ -88,7 +85,6 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                     }
                 };
 
-                // Подписываемся на событие MediaFailed для обработки ошибок
                 mediaPlayer.MediaFailed += (sender, e) =>
                 {
                     MessageBox.Show($"Ошибка воспроизведения медиафайла: {e.ErrorException.Message}");
@@ -103,26 +99,32 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
             }
         }
 
-
         async Task TimerStart()
         {
             _cancellationTokenSourceTimer = new CancellationTokenSource();
 
-            while (true)
+            try
             {
-                await Task.Delay(1000);
-                Timer--;
-
-                if (Timer == 0)
+                while (true)
                 {
-                    MessageBox.Show("Время вышло. Переход на другого игрока");
-                    NewQwest();
-                    Timer = 20;
-                    return;
+                    await Task.Delay(1000, _cancellationTokenSourceTimer.Token);
+                    Timer--;
+
+                    if (Timer == 0)
+                    {
+                        MessageBox.Show("Время вышло. Переход на другого игрока");
+                        NewQwest();
+                        Timer = 20;
+                        return;
+                    }
                 }
             }
+            catch (TaskCanceledException)
+            {
+                // Задача была отменена, ничего не делаем
+            }
         }
-        
+
         [RelayCommand]
         void Answer()
         {
@@ -132,7 +134,6 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                 MessageBox.Show("Песня еще исполняется. Пожалуйста, дождитесь её завершения.");
                 return;
             }
-            _cancellationTokenSourceTimer.Cancel();
 
             if (AnswerText.ToLower() == SelectedQwest.Answer.ToLower())
             {
@@ -146,8 +147,17 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
 
             NewQwest();
         }
+
         void NewQwest()
         {
+            if (_cancellationTokenSourceTimer != null)
+            {
+                _cancellationTokenSourceTimer.Cancel();
+                _cancellationTokenSourceTimer.Dispose();
+                _cancellationTokenSourceTimer = null;
+            }
+            Timer = 20;
+
             counterPlayer = counterPlayer == 0 ? 1 : 0;
             counterQwest = counterPlayer == 0 ? counterQwest + 1 : counterQwest;
 
