@@ -166,11 +166,21 @@ namespace QuizMuzic.ViewModels.QuizTwoPlayers
                 MessageBox.Show("Конец");
                 var vm = new FinalViewModel(Players[0], Players[1], SelectedQwest.ImagePathBackground);
 
-                var page = new FinalPage();
+                if (Players[0].Score == Players[1].Score)
+                {
+                    var page = new DrawFinalPage();
+                    page.DataContext = vm;
+                    ToFinal(page);
 
-                page.DataContext = vm;
+                }
+                else
+                {
+                    var page = new FinalPage();
+                    page.DataContext = vm;
+                    ToFinal(page);
 
-                ToFinal(page);
+                }
+
                 return;
             }
 
