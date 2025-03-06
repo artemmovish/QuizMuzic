@@ -143,7 +143,7 @@ namespace QuizMuzic.Store
     },
     new Qwest
     {
-        Text = "Имя композитора",
+        Text = "Фамилия композитора",
         Part = "Раздел Классической музыки",
         Answer = "Вивальди",
         Score = 2,
@@ -165,7 +165,7 @@ namespace QuizMuzic.Store
     },
     new Qwest
     {
-        Text = "Имя композитора",
+        Text = "Фамилия композитора",
         Part = "Раздел Классической музыки",
         Answer = "Моцарт", // Исправлено с "Жанна Фриске" на "Моцарт"
         Score = 2,
@@ -201,7 +201,7 @@ namespace QuizMuzic.Store
     },
     new Qwest
     {
-        Text = "Имя композитора",
+        Text = "Фамилия композитора",
         Part = "Раздел Классической музыки",
         Answer = "Чаийковскиий",
         Score = 2,
@@ -214,7 +214,7 @@ namespace QuizMuzic.Store
     {
         Text = "Название произведения",
         Part = "Раздел Классической музыки",
-        Answer = "Турецкиий марш",
+        Answer = "Турецкий марш",
         Score = 1,
         Color = "#D1CFEE",
         ImagePathBackground = Environment.CurrentDirectory + "\\Resources\\backgroundclassic.png",
@@ -223,7 +223,7 @@ namespace QuizMuzic.Store
     },
     new Qwest
     {
-        Text = "Имя композитора",
+        Text = "Фамилия композитора",
         Part = "Раздел Классической музыки",
         Answer = "Шопен",
         Score = 2,
